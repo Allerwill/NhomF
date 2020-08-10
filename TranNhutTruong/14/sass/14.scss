@@ -1,0 +1,398 @@
+@import url("bootstrap.min.css");
+@import url("font-awesome.min.css");
+
+html {
+  font-size: 75%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "montserratlight", sans-serif;
+  font-size: 1em;
+  line-height: 1.65;
+  color: #747474;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #c5a47e;
+}
+
+::selection {
+  background-color: #c5a47e;
+  color: #fff;
+}
+
+-webkit-::selection {
+  background-color: #c5a47e;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: #c5a47e;
+  color: #fff;
+}
+
+/* 1.2 Typography */
+
+@font-face {
+  font-family: "montserratlight";
+  src: url("../fonts/montserrat/Montserrat-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserratsemibold";
+  src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.type-14 {
+  h1,
+  .h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 8vmin;
+    line-height: 1.2;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+  }
+
+  h2,
+  .h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 2.1875em;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+  }
+
+  h3,
+  .h3 {
+    font-family: "montserratsemibold";
+    font-size: 1.875em;
+    line-height: 1.1;
+    font-weight: normal;
+    color: #3d3d3d;
+  }
+
+  h4,
+  .h4 {
+    font-family: "montserratsemibold";
+    font-size: 1.125em;
+    line-height: 1.35;
+    font-weight: normal;
+    color: #3d3d3d;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  h1 a,
+  .h1 a,
+  h2 a,
+  .h2 a,
+  h3 a,
+  .h3 a,
+  h4 a,
+  .h4 a {
+    color: inherit;
+  }
+
+  h1 a:hover,
+  .h1 a:hover,
+  h2 a:hover,
+  .h2 a:hover,
+  h3 a:hover,
+  .h3 a:hover,
+  h4 a:hover,
+  .h4 a:hover {
+    text-decoration: none;
+  }
+
+  p {
+    margin-bottom: 1.6em;
+  }
+
+  b,
+  strong {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  a {
+    color: #c5a47e;
+    -webkit-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+  }
+
+  a:hover,
+  a:focus {
+    color: #c5a47e;
+    outline: none;
+  }
+
+  a:focus {
+    text-decoration: none;
+  }
+
+  /* 1.7 Content styles */
+
+  .layout {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-primary {
+    color: #c5a47e;
+  }
+
+  .page-lines {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .page-lines .col-line {
+    padding: 0;
+  }
+
+  .page-lines .line {
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 50000px;
+    background-color: #f4f4f4;
+  }
+
+  .page-lines .col-line:last-child .line:last-child {
+    left: auto;
+    right: 0;
+  }
+
+  .row-base {
+    margin-top: -3em;
+  }
+
+  .col-base {
+    margin-top: 3em;
+  }
+
+  .section {
+    position: relative;
+    margin-top: 7.1em;
+    margin-bottom: 7.1em;
+  }
+
+  .section-header {
+    position: relative;
+  }
+
+  .section-title {
+    text-align: center;
+    margin: 0;
+    margin-left: 0.32em;
+  }
+
+  .fade-title-left,
+  .fade-title-right {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 10.8em;
+    line-height: 1;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 0.03em;
+    opacity: 0.035;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .fade-title-right {
+    left: 100%;
+  }
+
+  .section-content {
+    margin-top: 7.1em;
+  }
+
+  /* 5.3 Project Details */
+
+  .project-title-info {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2vmin;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 2.2em;
+    margin-left: -1.8em;
+  }
+
+  .project-title-info .project-info-item {
+    display: inline-block;
+    margin-left: 1.8em;
+  }
+
+  .project-details-item {
+    position: relative;
+  }
+
+  .project-details-img {
+    position: relative;
+    padding: 0;
+  }
+  .fadeInLeft {
+    visibility: visible;
+    animation-name: fadeInLeft;
+  }
+  .project-details-info {
+    visibility: visible;
+    animation-name: fadeInLeft;
+    background-color: #c5a47e;
+    padding: 4.8em 3.1em 4.8em;
+    color: #fff;
+  }
+
+  .project-details-title {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.9em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 0.7em;
+  }
+
+  .project-details-title:before {
+    content: "";
+    position: absolute;
+    bottom: -0.35em;
+    width: 10em;
+    border-top: 1px solid #ededed;
+    left: -4.4em;
+    width: 5.5em;
+  }
+
+  .project-details-descr {
+    font-size: 1.1em;
+    line-height: 1.62;
+  }
+
+  .project-details-descr p:last-child {
+    margin-bottom: 0;
+  }
+
+  .project-details-item:nth-child(even) .project-details-info {
+    right: 0;
+    left: auto;
+    top: 13%;
+    background-color: #212121;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 85%;
+    }
+    /* Slider */
+    .arrow-left {
+      top: 43.5vmin;
+      bottom: auto;
+    }
+    .arrow-right {
+      left: 28vmin;
+      right: auto;
+      margin-left: 5em;
+      top: 43.5vmin;
+      bottom: auto;
+    }
+    /* About */
+    .entry {
+      padding: 0 7.5em;
+    }
+    .col-about-spec {
+      padding: 0 4.4em;
+    }
+    /* Project Carousel */
+    .owl-prev {
+      left: 3.6em;
+    }
+    .owl-next {
+      right: 3.6em;
+    }
+    /* Projects Deatails */
+    .project-details {
+      margin-top: 7.1em;
+    }
+    .project-details-item {
+      margin-bottom: 7.1em;
+    }
+    .project-details-info {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 13%;
+      bottom: 13%;
+      width: 55%;
+    }
+    .project-details-item:nth-child(odd) .project-details-img {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .project-details-item:nth-child(even) .project-details-img {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  /* 11.2 Min width 992px */
+
+  @media (min-width: 992px) {
+    html {
+      font-size: 92%;
+    }
+
+    .project-details-item:nth-child(odd) .project-details-img {
+      padding-left: 5px;
+      padding-right: 15px;
+      margin-left: 33.33333333%;
+    }
+    .project-details-item:nth-child(even) .project-details-img {
+      padding-right: 5px;
+      padding-left: 15px;
+    }
+  }
+
+  /* 11.3 Min width 1200px */
+
+  @media (min-width: 1200px) {
+    html {
+      font-size: 100%;
+    }
+
+    /* Project Details */
+    .project-details-info {
+      width: 44%;
+    }
+  }
+
+  /* 11.4 Max height 480px  */
+}
