@@ -1,3 +1,17 @@
-Bước 1: Chạy lệnh npm install cho cả 2 file client và sever
-Bước 2: Tiếp tục chạy với lệnh npm start cho file sever để kết nối database.
-Bước 3: Chạy lệnh npm start cho file client để mở From.
+Bước 1: Chạy phpmyadmin tạo mới với tên "sql12358708"  và "utf8mb4_unicode_520_ci".
+Bước 2: Tìm và add file CSDL "sql12358708" có trong thư mục được cho.
+Bước 3: install Nodejs cho cả file client và server.
+	- Cách 1: Chạy cmd sử dụng thư mục
+	+ cmd vào thư mục server chạy lệnh "npm install" 
+	+ Chạy lệnh "npm start" trong thư mục server khi thành công sẽ thông báo
+		"Server is running on port 5000
+		Successfully connected to the database."
+	+ cmd vào thư mục client và chạy lệnh  "npm install"
+	+ Chạy lệnh "npm start" trong thư mục client để mở from.
+	- Cách 2: Chạy visual code
+	+ Mở bẳng TERMINAL chạy lệnh : npm install cho cả 2 thư mục client và server.
+	+ Chạy lệnh  "npm start" cho thư mục server và client.
+	+ Khi thành công hiển thị:
+		Server is running on port 5000
+		Successfully connected to the database.
+	Và mở được from của client.
