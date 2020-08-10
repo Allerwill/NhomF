@@ -1,0 +1,2 @@
+Bước 1: Chạy lệnh npm install
+Bước 2: Chạy lệnh npm start

@@ -1,0 +1,52 @@
+// Variables
+// Form vars
+
+$word: #1f365c;
+$wordfs: 35px;
+$quis: #8c95a2;
+$quisfs: 20px;
+$jamesfs: 24px;
+$ecofs: 19px;
+$ecocl: #ffb536;
+$ecofs: 19px;
+
+// Usage
+.type-1747 {
+  .my-container {
+    .sing {
+      padding-top: 8%;
+      background: rgb(245, 245, 245);
+      width: 100%;
+      padding-left: 3.5%;
+      .tang1 {
+        margin-bottom: 10%;
+        .word {
+          color: $word;
+          font-size: $wordfs;
+          font-weight: bold;
+        }
+        .quis {
+          color: $quis;
+          font-size: $quisfs;
+          margin-top: 3%;
+          font-style: italic;
+        }
+        .james {
+          font-size: $jamesfs;
+          font-weight: bold;
+        }
+        .eco {
+          font-size: $ecofs;
+          color: $ecocl;
+          font-weight: bold;
+        }
+      }
+      .avatar {
+        vertical-align: middle;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
