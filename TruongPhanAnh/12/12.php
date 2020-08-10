@@ -40,32 +40,6 @@ file_put_contents("css/12.css", $result);
 
     <link rel="stylesheet" href="./css/12.css" />
 
-    <style>
-        #wrap-contact-form98 .sscf-popup,
-        #wrap-contact-form98 .rf_submit {
-            border-radius: 25px;
-        }
-
-        #wrap-contact-form98 .rf_submit {
-            background: #c5a47e;
-        }
-
-        #wrap-contact-form98 .rf_submit:hover {
-            background: #cc9f6b;
-        }
-
-        #wrap-contact-form98 .sscf-popup {
-            background: #c5a47e;
-        }
-
-        #wrap-contact-form98 .sscf-popup:hover {
-            background: #cc9f6b;
-        }
-
-        #wrap-contact-form98 .success {
-            color: #cc9f6b !important;
-        }
-    </style>
 
 </head>
 

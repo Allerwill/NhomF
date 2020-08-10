@@ -27,7 +27,7 @@ file_put_contents("css/29.css", $result);
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOswald:300,400,700" rel="stylesheet" />
     <link rel="stylesheet" href="<?php echo $url_path ?>./css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $url_path ?>./css/29.css">
-    <script src="./js/interface.js" type="text/javascript"></script>
+
 
 
     <title>Module 29</title>
