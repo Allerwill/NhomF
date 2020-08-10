@@ -1,0 +1,3 @@
+Bước 1: Chạy lệnh npm install cho cả 2 file client và sever
+Bước 2: Tiếp tục chạy với lệnh npm start cho file sever để kết nối database.
+Bước 3: Chạy lệnh npm start cho file client để mở From.
